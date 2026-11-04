@@ -1,0 +1,167 @@
+{
+  "data": {
+    "orders": 36969,
+    "customers": 5878,
+    "revenue_gbp": 17743429.178,
+    "start": "2009-12-01",
+    "end": "2011-12-09",
+    "avg_order_value": 479.9542637885796
+  },
+  "cohort_retention": {
+    "month_k_active_share": {
+      "1": 0.23449372680685635,
+      "2": 0.2357484369253402,
+      "3": 0.24861878453038674,
+      "6": 0.22075815933509021,
+      "12": 0.22691045475855603
+    },
+    "cohorts": 25
+  },
+  "second_order": {
+    "repeat_rate_all": 0.7238856753997959,
+    "repeat_within_90d": 0.48237476808905383,
+    "repeat_within_365d": 0.7523191094619666,
+    "never_returned_within_365d": 0.24768089053803344,
+    "customers_with_full_year": 4312,
+    "median_days_to_second": 55.0,
+    "third_within_365d_given_two": 0.8520566885585897
+  },
+  "concentration": {
+    "active_12m": 4264,
+    "top10_share": 0.6117727848870878,
+    "top20_share": 0.744143143620774,
+    "bottom50_share": 0.07889867346217194
+  },
+  "loyalty_tiers": [
+    {
+      "tier": "Platinum (top 5%)",
+      "customers": 213,
+      "revenue": 4318828.85,
+      "min_spend": 5783.71,
+      "orders_per_customer": 21.831,
+      "revenue_share": 0.5022
+    },
+    {
+      "tier": "Gold (next 15%)",
+      "customers": 639,
+      "revenue": 2080465.761,
+      "min_spend": 2042.81,
+      "orders_per_customer": 7.8905,
+      "revenue_share": 0.2419
+    },
+    {
+      "tier": "Silver (next 30%)",
+      "customers": 1280,
+      "revenue": 1521760.371,
+      "min_spend": 668.14,
+      "orders_per_customer": 3.7102,
+      "revenue_share": 0.177
+    },
+    {
+      "tier": "Member (bottom 50%)",
+      "customers": 2132,
+      "revenue": 678492.922,
+      "min_spend": 3.75,
+      "orders_per_customer": 1.5549,
+      "revenue_share": 0.0789
+    }
+  ],
+  "rfm": [
+    {
+      "segment": "Champions",
+      "customers": 1318,
+      "revenue": 12218436.795,
+      "avg_orders": 16.8968,
+      "median_recency_days": 16.0,
+      "customer_share": 0.2242,
+      "revenue_share": 0.6886
+    },
+    {
+      "segment": "Loyal",
+      "customers": 1216,
+      "revenue": 2804856.428,
+      "avg_orders": 5.778,
+      "median_recency_days": 70.0,
+      "customer_share": 0.2069,
+      "revenue_share": 0.1581
+    },
+    {
+      "segment": "At risk (high value)",
+      "customers": 680,
+      "revenue": 1705427.712,
+      "avg_orders": 5.3529,
+      "median_recency_days": 373.0,
+      "customer_share": 0.1157,
+      "revenue_share": 0.0961
+    },
+    {
+      "segment": "Hibernating",
+      "customers": 1663,
+      "revenue": 592102.482,
+      "avg_orders": 1.3981,
+      "median_recency_days": 430.0,
+      "customer_share": 0.2829,
+      "revenue_share": 0.0334
+    },
+    {
+      "segment": "New / promising",
+      "customers": 559,
+      "revenue": 237887.85,
+      "avg_orders": 1.78,
+      "median_recency_days": 25.0,
+      "customer_share": 0.0951,
+      "revenue_share": 0.0134
+    },
+    {
+      "segment": "Needs attention",
+      "customers": 442,
+      "revenue": 184717.911,
+      "avg_orders": 1.6131,
+      "median_recency_days": 98.5,
+      "customer_share": 0.0752,
+      "revenue_share": 0.0104
+    }
+  ],
+  "dormant": {
+    "customers": 2398,
+    "share": 0.407961891799932,
+    "lifetime_revenue": 2393443.074,
+    "multi_order_customers": 1246,
+    "multi_order_lifetime_revenue": 2003890.912,
+    "at_risk_high_value": 680,
+    "at_risk_high_value_revenue": 1705427.7119999998,
+    "natural_return_rate_12m": 0.3321212121212121,
+    "natural_return_rate_12m_multi_order": 0.4523809523809524,
+    "natural_return_rate_12m_one_order": 0.2792321116928447,
+    "returners_spend_next_12m": 650.7269708029197
+  },
+  "propensity": {
+    "train_cutoff": "2011-06-13",
+    "test_cutoff": "2011-09-11",
+    "test_customers": 5281,
+    "base_rate": 0.43400871047150164,
+    "auc": 0.7900112366635781,
+    "top20_capture": 0.3769633507853403,
+    "top20_buy_rate": 0.8181818181818182,
+    "recency_rule_auc": 0.7635896775670186,
+    "recency_rule_top20_capture": 0.34642233856893545
+  },
+  "reactivation_case": {
+    "assumptions": {
+      "incremental_reactivation_rate": 0.05,
+      "discount": 0.1,
+      "cost_per_contact_gbp": 0.1
+    },
+    "target_customers": 1246,
+    "customers_won": 62.300000000000004,
+    "revenue_12m_gbp": 40540.2902810219,
+    "discount_cost_gbp": 2990.1150634028513,
+    "contact_cost_gbp": 124.60000000000001,
+    "revenue_less_campaign_cost_gbp": 37425.57521761905,
+    "holdout": {
+      "p0_90d": 0.11154598825831703,
+      "p1_90d": 0.16154598825831704,
+      "customers_per_arm": 736
+    }
+  }
+}
