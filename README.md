@@ -53,6 +53,10 @@ A retention and go-to-market analysis of a real online retailer's customer base:
 4. **Personalisation:** the propensity score decides who gets a discount; likely buyers get a reminder instead.
 5. **Measure:** a random holdout in every campaign; KPIs are 2nd-order rate within 90 days, reactivation rate against the holdout and revenue per contacted customer.
 
+## SQL version
+
+The core retention metrics are also written in SQL (`sql/retention_metrics.sql`, SQLite with CTEs and window functions): second-order rate within a year, third-order rate given two orders, loyalty-tier revenue share and the dormant base. `run_sql.py` loads the orders into SQLite, runs each query and checks it against the Python results; all five match.
+
 ## Limitations
 
 - One retailer, 2009–2011, with many wholesale customers, so absolute rates are higher than for a typical consumer app.
@@ -67,6 +71,7 @@ pip install pandas numpy scikit-learn matplotlib
 python get_data.py       # only if data/ is empty: downloads the dataset and builds data/orders.csv.gz
 python run_analysis.py   # writes results/results.json, cohort_retention.csv, customer_segments.csv
 python make_charts.py    # writes results/summary.png
+python run_sql.py        # runs the SQL queries and checks them against the Python results
 ```
 
 ## Data source
