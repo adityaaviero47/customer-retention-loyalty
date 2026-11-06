@@ -1,0 +1,41 @@
+{
+  "second_order_within_365d": [
+    {
+      "repeat_within_365d": 0.7523191094619666,
+      "customers_with_full_year": 4312
+    }
+  ],
+  "third_order_given_two": [
+    {
+      "third_within_365d_given_two": 0.8520566885585897
+    }
+  ],
+  "tier_revenue_share": [
+    {
+      "tier": "Platinum (top 5%)",
+      "customers": 213,
+      "revenue_share": 0.5022158022971344
+    },
+    {
+      "tier": "Gold (next 15%)",
+      "customers": 639,
+      "revenue_share": 0.2419273413236399
+    },
+    {
+      "tier": "Silver (next 30%)",
+      "customers": 1280,
+      "revenue_share": 0.17695818291705398
+    },
+    {
+      "tier": "Member (bottom 50%)",
+      "customers": 2132,
+      "revenue_share": 0.07889867346217182
+    }
+  ],
+  "dormant_base": [
+    {
+      "dormant_customers": 2398,
+      "dormant_repeat_buyers": 1246
+    }
+  ]
+}
